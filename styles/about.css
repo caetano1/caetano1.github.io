@@ -1,0 +1,48 @@
+/* About */
+.about-content-holder{
+    margin-bottom: 5rem;
+}
+.about-content{
+    padding: 15rem 0rem 3rem;
+}
+#salutation {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+#presentation {
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+.link-in-text {
+    border-bottom: 1px solid;
+    display: inline-block;
+    transition: 0.3s;
+}
+.link-in-text:hover {
+    color: #575366;
+    border-bottom: 1px solid #e5e5e5;
+}
+.photo-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* Recent reviews */
+.container-reviews {
+    display: block;
+    margin-bottom: 8rem;
+}
+.recent-reviews-title { 
+    text-align: center;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+}
+.nav-recent-reviews {
+    border-top: 1px solid #575366;
+    border-bottom: 1px solid #575366;
+}
+#last-item {
+    border-bottom: 0px !important;
+}

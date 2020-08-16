@@ -1,0 +1,60 @@
+.footer-content-holder {
+    display: block;
+    margin: 3rem 2rem 8rem;
+    grid-area: ft;
+}
+.inner-footer-container {
+    background-color: #e5e5e5;
+    padding: 1rem 1rem;
+}
+.newsletter-title {
+    text-align: center;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem 0rem;
+    align-items: center;
+}
+.input-entry-box {
+    border: none;
+    border-bottom: 1px solid #575366;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #575366;
+    width: 75%;
+    max-width: 170rem;
+    padding: 2px;
+    font-size: 1rem;
+    margin-bottom: 20px !important;
+    outline: none;
+    background-color: inherit;
+}
+.btn-subscribe {
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+    color: #0C3F5B;
+    border-color: #0C3F5B;
+}
+.external-profiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem 0rem;
+    width: 100%;
+}
+.logo-footer {
+    width: auto;
+    padding: 1rem 0.5rem;
+}
+.github-logo, .linkedin-logo{
+    width: 40px;
+    height: auto;
+    transition: 0.3s;
+}
+.github-logo:hover, .linkedin-logo:hover{
+    opacity: 30%;
+    cursor: pointer;
+}

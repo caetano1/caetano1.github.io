@@ -1,0 +1,43 @@
+h1 {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 4.5rem;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+h3 {
+    font-family: "Playfair Display", regular;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+h4 {
+    font-family: "Playfair Display", regular;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    color: inherit;
+}
+h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    color: inherit;
+}
+p {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: inherit;
+}

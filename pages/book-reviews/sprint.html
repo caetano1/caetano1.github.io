@@ -5,27 +5,32 @@
     <meta name="author" content= "Joao Caetano"/>
     <meta name="description" content="This is my personal website, originally made as a Udacity's Front End Nanodegree project."/>
     <meta pagename="book-review" content="Sprint, by Jake Knapp and John Zeratsky"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>João Caetano | Product Manager</title>
-    <link rel="icon" type="image/ico" href="../../img/caetano-c-white.ico"/>
+    <link rel="icon" type="image/ico" href="../../img/icons/caetano-c-white.ico"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"/>
-    <link rel="stylesheet" type="text/css" href="../../styles/blog-post.css">
+    <link rel="stylesheet" type="text/css" href="../../styles.css">
 </head>
 
 <body>
-    <div class="container-body">
+    <!-- Main wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header section -->
         <header class="container-header">
-            <div class="container-inner">
+            <div class="container-header-inner">
                 <div class="logo-caetano">
                     <a href="../../index.html" title="João Caetano | Product Manager">
-                        <img src="../../img/caetano-c-white.png" alt="logo">
+                        <img src="../../img/logos/caetano-c-white.png" alt="logo">
                     </a>
                 </div>
                 <nav class="nav-menu">
                     <ul class="menu">
                         <li class="menu-item">
+                            <!-- link back to home -->
                             <a class="menu-item" href="../../index.html">About</a>
                         </li>
                         <li class="menu-item">
@@ -35,54 +40,68 @@
                 </nav>
             </div>
         </header>
-        <div class="main-content-holder">
-            <div class="breadcrumb">
-                <ul class="breadcrumb">
-                    <li>
-                        <a class="breadcrumb-item" href="../book-reviews.html">
-                            <img src="../../img/arrow-backward.png" class="arrow-icon">
-                            Back to Book Reviews
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="container-main">
-                <div class="container-main-inner">
+
+        <!-- Main section -->
+        <div class="container-main">
+
+            <!-- Breadcrumb component -->
+            <ul class="breadcrumb">
+                <li>
+                    <a class="breadcrumb-item" href="../book-reviews.html">
+                        <img src="../../img/icons/arrow-backward.png" class="arrow-icon">
+                        Back to Book Reviews
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Post -->
+            <div class="container-post">
+                <div class="container-post-inner">
+
+                    <!-- Book review -->
                     <div class="container-book-review">
+
+                        <!-- Cover and caption -->
                         <figure class="book-cover-container">
-                            <img class="book-cover" src="../../img/book-6-sprint.png">
+                            <img src="../../img/book-covers/book-6-sprint.png" alt="Sprint book cover">
                             <figcaption>
                                 <em>Image from: https://medium.com/@jakek</em>
                             </figcaption>
                         </figure>
-                        <div class="book-review">
-                            <section class="title-authorship">
-                                <h1 id="book-title">Sprint</h1>
-                                <p id="book-author">Author: Jake Knapp, John Zeratsky.</p>
-                            </section>
-                            <div class="social-share">
-                                <a class="social-share-link">
-                                    <img class="social-icon twitter" title="twitter share" src="../../img/twitter-icon-circle.png">
-                                </a>
-                                <a class="social-share-link">
-                                    <img class="social-icon linkedin" title="linkedin share" src="../../img/linkedin-round.png">
-                                </a>
-                                <a class="social-share-link">
-                                    <img class="social-icon facebook" title="facebook share" src="../../img/facebook-circle.png">
-                                </a>
-                            </div>
-                            <section class="article">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </section>
+
+                        <!-- Title and authorship -->
+                        <section class="title-authorship">
+                            <h1 id="book-title">Sprint</h1>
+                            <p id="book-author">Author: Jake Knapp, John Zeratsky.</p>
+                        </section>
+
+                        <!-- Social share component -->
+                        <div class="social-share">
+                            <a class="social-share-link">
+                                <img class="social-icon twitter" title="twitter share" src="../../img/logos/twitter-icon-circle.png" alt="Twitter icon">
+                            </a>
+                            <a class="social-share-link">
+                                <img class="social-icon linkedin" title="linkedin share" src="../../img/logos/linkedin-round.png" alt="Linkedin icon">
+                            </a>
+                            <a class="social-share-link">
+                                <img class="social-icon facebook" title="facebook share" src="../../img/logos/facebook-circle.png" alt="Facebook icon">
+                            </a>
                         </div>
+
+                        <!-- Article -->
+                        <section class="article">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </section>
                     </div>
+                    
+                    <!-- Post authorship -->
                     <div class="post-author">
                         <div class="author-photo-container">
-                            <img src="../../img/full-size.png">
+                            <img src="../../img/full-size.png" alt="Post author photo">
                         </div>
                         <div class="author-infos">
                             <section class="author-name-title">
@@ -97,6 +116,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
         <footer class="footer-content-holder">
             <div class="inner-footer-container">
                 <form title="Newletter Subscription" class="newsletter-form">
@@ -109,19 +130,19 @@
                     </div>
                 </form>
                 <div class="btn-holder">
-                    <button class="btn-subscribe" value="subscribe" type="button" onclick="alert('Subscription sent!')">
+                    <button class="btn btn-subscribe" value="subscribe" type="button" onclick="alert('Subscription sent!')">
                         Subscribe
                     </button>
                 </div>
                 <div class="external-profiles">
                     <div class="logo-footer">
                         <a href="https://www.github.com/caetano1" target="_blank">
-                            <img src="../../img/GitHub-Mark-64px.png" class="github-logo">
+                            <img src="../../img/logos/GitHub-Mark-64px.png" class="github-logo" alt="Github">
                         </a>
                     </div>
                     <div class="logo-footer">
                         <a href="https://www.linkedin.com/in/joaoluiscaetano" target="_blank">
-                            <img src="../../img/linkedin-round.png" class="linkedin-logo">
+                            <img src="../../img/logos/linkedin-round.png" class="linkedin-logo" alt="Linkedin">
                         </a>
                     </div>
                 </div>

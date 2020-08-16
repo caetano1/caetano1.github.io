@@ -5,22 +5,26 @@
     <meta name="author" content= "Joao Caetano"/>
     <meta name="description" content="This is my personal website, originally made as a Udacity's Front End Nanodegree project."/>
     <meta pagename="book reviews" content="List of book reviews"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>João Caetano | Product Manager</title>
-    <link rel="icon" type="image/ico" href="../img/caetano-c-white.ico"/>
+    <link rel="icon" type="image/ico" href="../img/icons/caetano-c-white.ico"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"/>
-    <link rel="stylesheet" type="text/css" href="../styles/book-reviews.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
 
 <body>
-    <div class="container-body">
+    <!-- Main wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header section -->
         <header class="container-header">
-            <div class="container-inner">
+            <div class="container-header-inner">
                 <div class="logo-caetano">
                     <a href="../index.html" title="João Caetano | Product Manager">
-                        <img src="../img/caetano-c-white.png" alt="logo">
+                        <img src="../img/logos/caetano-c-white.png" alt="logo">
                     </a>
                 </div>
                 <nav class="nav-menu">
@@ -36,172 +40,166 @@
                 </nav>
             </div>
         </header>
-        <div class="main-content-holder">
-            <div class="breadcrumb">
-                <ul class="breadcrumb">
-                    <li>
-                        <a class="breadcrumb-item" href="../index.html">
-                            <img src="../img/arrow-backward.png" class="arrow-icon">
-                            Back to About
+
+        <!-- Main section -->
+        <div class="container-main">
+
+            <!-- Breadcrumb component -->
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../index.html">
+                        <img src="../img/icons/arrow-backward.png" class="arrow-icon">
+                        Back to About
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Main content -->
+            <div class="book-reviews-content">
+
+                <!-- Intro -->
+                <div class="main-text">
+                    <section>
+                        <h1 id="page-title">Book Reviews</h1>
+                    </section>
+                    <section>
+                        <p id="introduction">In this section, I present to you some book reviews that I wrote, in order to summarize the main learnings these books provided me with, and to come back here any time I need studying. Hope you enjoy them!</p>
+                    </section>
+                </div>
+
+                <!-- Book reviews list component -->
+                <ul class="book-reviews-list">
+                    <li class="book-reviews-item" id="first-list-item">
+                        <a href="book-reviews/innovators-dilemma-christensen.html" class="book-card">
+                            <div class="book-card-inner">
+                                <div class="book-cover">
+                                    <img src="../img/book-covers/book-1-innovators-dilemma.png" alt="The Innovator`s Dilemma book cover">
+                                </div>
+                                <div class="book-infos">
+                                    <h4 id="book-title">The Innovator's Dilemma</h4>
+                                    <p id="book-authorship" title="authorship">Author: Clayton Christensen</p>   
+                                </div>
+                            </div>
+                            <div class="book-intro">
+                                <p id="book-intro" title="book intro">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="book-reviews-item" id="two">
+                        <a href="book-reviews/inspired-cagan.html" class="book-card">
+                            <div class="book-card-inner">
+                                <div class="book-cover">
+                                    <img src="../img/book-covers/book-2-inspired.png" alt="Inspired book cover">
+                                </div>
+                                <div class="book-infos">
+                                    <h4 id="book-title">Inspired</h4>
+                                    <p id="book-authorship" title="authorship">Author: Marty Cagan</p>   
+                                </div>
+                            </div>
+                            <div class="book-intro">
+                                <p id="book-intro" title="book intro">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="book-reviews-item" id="three">
+                        <a href="book-reviews/lean-startup-ries.html" class="book-card">
+                            <div class="book-card-inner">
+                                <div class="book-cover">
+                                    <img src="../img/book-covers/book-3-lean-startup.png" alt="The Lean Startup book cover">
+                                </div>
+                                <div class="book-infos">
+                                    <h4 id="book-title">The Lean Startup</h4>
+                                    <p id="book-authorship" title="authorship">Author: Eric Ries</p>   
+                                </div>
+                            </div>
+                            <div class="book-intro">
+                                <p id="book-intro" title="book intro">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="book-reviews-item" id="four">
+                        <a href="book-reviews/the-product-book.html" class="book-card">
+                            <div class="book-card-inner">
+                                <div class="book-cover">
+                                    <img src="../img/book-covers/book-4-the-product-book.png" alt="The Product Book book cover">
+                                </div>
+                                <div class="book-infos">
+                                    <h4 id="book-title">The Product Book</h4>
+                                    <p id="book-authorship" title="authorship">Author: Product School</p>   
+                                </div>
+                            </div>
+                            <div class="book-intro">
+                                <p id="book-intro" title="book intro">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="book-reviews-item" id="five">
+                        <a href="book-reviews/escaping-the-build-trap.html" class="book-card">
+                            <div class="book-card-inner">
+                                <div class="book-cover">
+                                    <img src="../img/book-covers/book-5-escaping-the-build-trap.png" alt="Escaping the Build Trap book cover">
+                                </div>
+                                <div class="book-infos">
+                                    <h4 id="book-title">Escaping the Build Trap</h4>
+                                    <p id="book-authorship" title="authorship">Author: Melissa Perri</p>   
+                                </div>
+                            </div>
+                            <div class="book-intro">
+                                <p id="book-intro" title="book intro">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="book-reviews-item" id="six">
+                        <a href="book-reviews/sprint.html" class="book-card">
+                            <div class="book-card-inner">
+                                <div class="book-cover">
+                                    <img src="../img/book-covers/book-6-sprint.png" alt="Sprint book cover">
+                                </div>
+                                <div class="book-infos">
+                                    <h4 id="book-title">Sprint</h4>
+                                    <p id="book-authorship" title="authorship">Authors: Jake Knapp, John Zeratsky</p>   
+                                </div>
+                            </div>
+                            <div class="book-intro">
+                                <p id="book-intro" title="book intro">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="book-reviews-item" id="seven">
+                        <a href="book-reviews/the-hard-thing-about-hard-things.html" class="book-card">
+                            <div class="book-card-inner">
+                                <div class="book-cover">
+                                    <img src="../img/book-covers/book-7-the-hard-thing.png" alt="The Hard Thing about Hard Things book cover">
+                                </div>
+                                <div class="book-infos">
+                                    <h4 id="book-title">The Hard Thing About Hard Things</h4>
+                                    <p id="book-authorship" title="authorship">Author: Ben Horowitz</p>   
+                                </div>
+                            </div>
+                            <div class="book-intro">
+                                <p id="book-intro" title="book intro">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
+                                </p>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="inner-main-container">
-                <div class="main-content">
-                    <div class="main-text">
-                        <section id="page-title">
-                            <h1>Book Reviews</h1>
-                        </section>
-                        <section id="introduction">
-                            <p>In this section, I present to you some book reviews that I wrote, in order to summarize the main learnings these books provided me with, and to come back here any time I need studying. Hope you enjoy them!</p>
-                        </section>
-                    </div>
-                    <ul class="recent-reviews-list">
-                        <li class="recent-reviews-item" id="one">
-                            <a href="book-reviews/innovators-dilemma-christensen.html" class="book-card">
-                                <div class="book-card-inner">
-                                    <div class="cover-title">
-                                        <div class="book-cover">
-                                            <img src="../img/book-1-innovators-dilemma.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">The Innovator's Dilemma</h4>
-                                            <p id="book-authorship" title="authorship">Author: Clayton Christensen</p>   
-                                        </div>
-                                    </div>
-                                    <div class="book-intro">
-                                        <p id="book-intro" title="book intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="recent-reviews-item" id="two">
-                            <a href="book-reviews/inspired-cagan.html" class="book-card">
-                                    <div class="book-card-inner">
-                                        <div class="cover-title">
-                                            <div class="book-cover">
-                                                <img src="../img/book-2-inspired.png" alt="book-cover">
-                                            </div>
-                                            <div class="book-infos">
-                                                <h4 id="book-title">Inspired</h4>
-                                                <p id="book-authorship" title="authorship">Author: Marty Cagan</p>   
-                                            </div>
-                                        </div>
-                                        <div class="book-intro">
-                                            <p id="book-intro" title="book intro">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
-                                            </p>
-                                        </div>
-                                    </div>
-                            </a>
-                        </li>
-                        <li class="recent-reviews-item" id="three">
-                            <a href="book-reviews/lean-startup-ries.html" class="book-card">
-                                <div class="book-card-inner">
-                                    <div class="cover-title">
-                                        <div class="book-cover">
-                                            <img src="../img/book-3-lean-startup.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">The Lean Startup</h4>
-                                            <p id="book-authorship" title="authorship">Author: Eric Ries</p>   
-                                        </div>
-                                    </div>
-                                    <div class="book-intro">
-                                        <p id="book-intro" title="book intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="recent-reviews-item" id="four">
-                            <a href="book-reviews/the-product-book.html" class="book-card">
-                                <div class="book-card-inner">
-                                    <div class="cover-title">
-                                        <div class="book-cover">
-                                            <img src="../img/book-4-the-product-book.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">The Product Book</h4>
-                                            <p id="book-authorship" title="authorship">Author: Product School</p>   
-                                        </div>
-                                    </div>
-                                    <div class="book-intro">
-                                        <p id="book-intro" title="book intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="recent-reviews-item" id="five">
-                            <a href="book-reviews/escaping-the-build-trap.html" class="book-card">
-                                <div class="book-card-inner">
-                                    <div class="cover-title">
-                                        <div class="book-cover">
-                                            <img src="../img/book-5-escaping-the-build-trap.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">Escaping the Build Trap</h4>
-                                            <p id="book-authorship" title="authorship">Author: Melissa Perri</p>   
-                                        </div>
-                                    </div>
-                                    <div class="book-intro">
-                                        <p id="book-intro" title="book intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="recent-reviews-item" id="six">
-                            <a href="book-reviews/sprint.html" class="book-card">
-                                <div class="book-card-inner">
-                                    <div class="cover-title">
-                                        <div class="book-cover">
-                                            <img src="../img/book-6-sprint.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">Sprint</h4>
-                                            <p id="book-authorship" title="authorship">Authors: Jake Knapp, John Zeratsky</p>   
-                                        </div>
-                                    </div>
-                                    <div class="book-intro">
-                                        <p id="book-intro" title="book intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="recent-reviews-item" id="seven">
-                            <a href="book-reviews/the-hard-thing-about-hard-things.html" class="book-card">
-                                <div class="book-card-inner">
-                                    <div class="cover-title">
-                                        <div class="book-cover">
-                                            <img src="../img/book-7-the-hard-thing.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">The Hard Thing About Hard Things</h4>
-                                            <p id="book-authorship" title="authorship">Author: Ben Horowitz</p>   
-                                        </div>
-                                    </div>
-                                    <div class="book-intro">
-                                        <p id="book-intro" title="book intro">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat dolor, vestibulum non interdum quis, suscipit egestas ipsum. Proin posuere mollis turpis, et tristique nisl porta tristique.
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
+
+        <!-- Footer -->
         <footer class="footer-content-holder">
             <div class="inner-footer-container">
                 <form title="Newletter Subscription" class="newsletter-form">
@@ -214,19 +212,19 @@
                     </div>
                 </form>
                 <div class="btn-holder">
-                    <button class="btn-subscribe" value="subscribe" type="button" onclick="alert('Subscription sent!')">
+                    <button class="btn btn-subscribe" value="subscribe" type="button" onclick="alert('Subscription sent!')">
                         Subscribe
                     </button>
                 </div>
                 <div class="external-profiles">
                     <div class="logo-footer">
                         <a href="https://www.github.com/caetano1" target="_blank">
-                            <img src="../img/GitHub-Mark-64px.png" class="github-logo">
+                            <img src="../img/logos/GitHub-Mark-64px.png" class="github-logo" alt="Github">
                         </a>
                     </div>
                     <div class="logo-footer">
                         <a href="https://www.linkedin.com/in/joaoluiscaetano" target="_blank">
-                            <img src="../img/linkedin-round.png" class="linkedin-logo">
+                            <img src="../img/logos/linkedin-round.png" class="linkedin-logo" alt="Linkedin">
                         </a>
                     </div>
                 </div>

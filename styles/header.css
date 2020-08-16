@@ -1,0 +1,38 @@
+.container-header {
+    display: block;
+    padding: 0rem 0rem;
+    height: 100%;
+    grid-area: hd;
+}
+.container-header-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-caetano{
+    padding: 1rem;
+    width: 50px;
+    height: auto;
+}
+.nav-menu {
+    width: fit-content;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0rem 1rem;
+    padding: 0px;
+}
+.menu-item {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #575366;
+    padding: 0.2rem 0.5rem;
+    transition: 0.3s;
+}
+.menu-item:hover {
+    color: #e5e5e5;
+}

@@ -5,21 +5,25 @@
     <meta name="author" content= "Joao Caetano"/>
     <meta name="description" content="This is my personal website, originally made as a Udacity's Front End Nanodegree project."/>
     <meta pagename="home" content="Home"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>João Caetano | Product Manager</title>
-    <link rel="icon" type="image/ico" href="img/caetano-c-white.ico"/>
+    <link rel="icon" type="image/ico" href="img/icons/caetano-c-white.ico"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,700&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"/>
-    <link rel="stylesheet" type="text/css" href="styles/home.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="container-body">
+    <!-- Main wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header section -->
         <header class="container-header">
-            <div class="container-inner">
+            <div class="container-header-inner">
                 <div class="logo-caetano">
                     <a href="index.html" title="João Caetano | Product Manager">
-                        <img src="img/caetano-c-white.png" alt="logo">
+                        <img src="img/logos/caetano-c-white.png" alt="logo">
                     </a>
                 </div>
                 <nav class="nav-menu">
@@ -35,85 +39,126 @@
                 </nav>
             </div>
         </header>
-        <div class="about-content-holder">
-            <div class="inner-about-container">
+
+        <!-- Main section -->
+        <main class="container-main about-wrapper">
+
+            <!-- About -->
+            <div class="about-content-holder">
                 <div class="about-content">
                     <!-- tag to redirect from the internal link -->
                     <div id="about"></div>
                     <!-- put the about section here below -->
-                    <section id="salutation">
-                        <h1>Greetings!</h1>
+                    <section>
+                        <h1 id="salutation">Greetings!</h1>
                     </section>
-                    <section id="presentation">
-                        <h2>I'm Caetano,</h2>
+                    <section>
+                        <h2 id="presentation">I'm Caetano,</h2>
                     </section>
                     <section id="about-text">
-                        <p>an Associate Product Manager at <a href="https://www.vtex.com" target="_blank" class="link-in-text">VTEX</a>. Currently, I’m part of the Checkout Squad, where we develop the best-in-class checkout experience for our customers.</p>
-                        <p>I graduted as an Industrial Engineer from both Federal University of Rio de Janeiro, in Brazil, and École des Mines de Saint-Étienne, France. Previously, I’ve worked at Accenture,  Groupe Casino, and Eleva Educação, doing a wide range of different jobs.</p>
+                        <p>an <b>Associate Product Manager</b> at <a href="https://www.vtex.com" target="_blank" class="link-in-text">VTEX</a>. Currently, I’m part of the Checkout Squad, where we develop the best-in-class checkout experience for our customers.</p>
+                        <p>I graduted as an Industrial Engineer from both Federal University of Rio de Janeiro, in Brazil, and École des Mines de Saint-Étienne, France. Previously, I’ve worked at <b>Accenture,  Groupe Casino, and Eleva Educação</b>, doing a wide range of different jobs.</p>
                         <p>Nevertheless, it was in VTEX that I’ve became passioned about technology and the business challenges it can solve.</p>
                     </section>
+                </div>  
+                <div class="photo-container">
+                    <img src="img/full-size.png" alt="João Caetano - Photo" id="author-photo">
                 </div>
             </div>
-        </div>
-        <div class="author-photo-container">
-            <img src="img/full-size.png" alt="João Caetano - Photo" id="author-photo">
-        </div>
-        <div class="reviews-content-holder">
-            <div class="inner-reviews-container">
+            
+            <!-- Recent reviews list -->
+            <div class="container-reviews">
                 <section class="recent-reviews-title">
                     <h3>Recent Reviews</h3>
                 </section>
+
+                <!-- Book reviews list component -->
                 <nav class="nav-recent-reviews">
-                    <ul class="recent-reviews-list">
-                        <li class="recent-reviews-item">
-                            <div class="book-card">
-                                <a href="pages/book-reviews/innovators-dilemma-christensen.html">
-                                    <div class="book-card-inner">
-                                        <div class="book-cover">
-                                            <img src="img/book-1-innovators-dilemma.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">The Innovator's Dilemma</h4>
-                                            <p id="book-authorship" title="authorship">Author: Clayton Christensen</p>   
-                                        </div>
+                    <ul class="book-reviews-list" id="list-about-page">
+                        <li class="book-reviews-item">
+                            <a href="pages/book-reviews/innovators-dilemma-christensen.html">
+                                <div class="book-card-inner">
+                                    <div class="book-cover">
+                                        <img src="img/book-covers/book-1-innovators-dilemma.png" alt="The Innovator's Dilemma book cover">
                                     </div>
-                                </a>
-                            </div>
+                                    <div class="book-infos">
+                                        <h4 id="book-title">The Innovator's Dilemma</h4>
+                                        <p id="book-authorship" title="authorship">Author: Clayton Christensen</p>   
+                                    </div>
+                                </div>
+                            </a>
                         </li>
-                        <li class="recent-reviews-item">
-                            <div class="book-card">
-                                <a href="pages/book-reviews/inspired-cagan.html">
-                                    <div class="book-card-inner">
-                                        <div class="book-cover">
-                                            <img src="img/book-2-inspired.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">Inspired</h4>
-                                            <p id="book-authorship" title="authorship">Author: Marty Cagan</p>   
-                                        </div>
+                        <li class="book-reviews-item">
+                            <a href="pages/book-reviews/inspired-cagan.html">
+                                <div class="book-card-inner">
+                                    <div class="book-cover">
+                                        <img src="img/book-covers/book-2-inspired.png" alt="Inspired book cover">
                                     </div>
-                                </a>
-                            </div>
+                                    <div class="book-infos">
+                                        <h4 id="book-title">Inspired</h4>
+                                        <p id="book-authorship" title="authorship">Author: Marty Cagan</p>   
+                                    </div>
+                                </div>
+                            </a>
                         </li>
-                        <li class="recent-reviews-item">
-                            <div class="book-card">
-                                <a href="pages/book-reviews/lean-startup-ries.html">
-                                    <div class="book-card-inner">
-                                        <div class="book-cover">
-                                            <img src="img/book-3-lean-startup.png" alt="book-cover">
-                                        </div>
-                                        <div class="book-infos">
-                                            <h4 id="book-title">The Lean Startup</h4>
-                                            <p id="book-authorship" title="authorship">Author: Eric Ries</p>   
-                                        </div>
+                        <li class="book-reviews-item">
+                            <a href="pages/book-reviews/sprint.html">
+                                <div class="book-card-inner">
+                                    <div class="book-cover">
+                                        <img src="img/book-covers/book-6-sprint.png" alt="Sprint book cover">
                                     </div>
-                                </a>
-                            </div>
+                                    <div class="book-infos">
+                                        <h4 id="book-title">Sprint</h4>
+                                        <p id="book-authorship" title="authorship">Author: Jake Knapp, John Zeratsky</p>   
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="book-reviews-item">
+                            <a href="pages/book-reviews/escaping-the-build-trap.html">
+                                <div class="book-card-inner">
+                                    <div class="book-cover">
+                                        <img src="img/book-covers/book-5-escaping-the-build-trap.png" alt="Escaping the Build Trap book cover">
+                                    </div>
+                                    <div class="book-infos">
+                                        <h4 id="book-title">Escaping the Build Trap</h4>
+                                        <p id="book-authorship" title="authorship">Author: Melissa Perri</p>   
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="book-reviews-item">
+                            <a href="pages/book-reviews/the-product-book.html">
+                                <div class="book-card-inner">
+                                    <div class="book-cover">
+                                        <img src="img/book-covers/book-4-the-product-book.png" alt="The Product Book book cover">
+                                    </div>
+                                    <div class="book-infos">
+                                        <h4 id="book-title">The Product Book</h4>
+                                        <p id="book-authorship" title="authorship">Author: Prodcut School</p>   
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="book-reviews-item" id="last-item">
+                            <a href="pages/book-reviews/lean-startup-ries.html">
+                                <div class="book-card-inner">
+                                    <div class="book-cover">
+                                        <img src="img/book-covers/book-3-lean-startup.png" alt="The Lean Startup book cover">
+                                    </div>
+                                    <div class="book-infos">
+                                        <h4 id="book-title">The Lean Startup</h4>
+                                        <p id="book-authorship" title="authorship">Author: Eric Ries</p>   
+                                    </div>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
-        </div>
+        </main>
+
+        <!-- Footer -->
         <footer class="footer-content-holder">
             <div class="inner-footer-container">
                 <form title="Newletter Subscription" class="newsletter-form">
@@ -126,19 +171,19 @@
                     </div>
                 </form>
                 <div class="btn-holder">
-                    <button class="btn-subscribe" value="subscribe" type="button" onclick="alert('Subscription sent!')">
+                    <button class="btn btn-subscribe" value="subscribe" type="button" onclick="alert('Subscription sent!')">
                         Subscribe
                     </button>
                 </div>
                 <div class="external-profiles">
                     <div class="logo-footer">
                         <a href="https://www.github.com/caetano1" target="_blank">
-                            <img src="img/GitHub-Mark-64px.png" class="github-logo">
+                            <img src="img/logos/GitHub-Mark-64px.png" class="github-logo" alt="Github">
                         </a>
                     </div>
                     <div class="logo-footer">
                         <a href="https://www.linkedin.com/in/joaoluiscaetano" target="_blank">
-                            <img src="img/linkedin-round.png" class="linkedin-logo">
+                            <img src="img/logos/linkedin-round.png" class="linkedin-logo" alt="Linkedin">
                         </a>
                     </div>
                 </div>

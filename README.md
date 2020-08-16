@@ -1,4 +1,7 @@
 # Personal Website
----
 
-This repo contains the files that form my personal website. It was first developed as a assignment from Udacity's <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd0011"> Front End Web Developer Nanodegree</a> program.
+Hello!
+
+This is the repo in which I manage my personal website.
+
+Please, get in touch with me, if you want to colaborate.

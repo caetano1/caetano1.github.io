@@ -1,0 +1,10 @@
+.main-wrapper {
+    display: grid;
+    grid-template-areas: "hd" "main" "ft";
+}
+
+/* Main section */
+.container-main {
+    grid-area: main;
+    margin: 0rem 1rem;
+}
